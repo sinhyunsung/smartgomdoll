@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="smartgomdoll.a2018doll.CreateMotion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10">
+
+
+        <ListView
+            android:choiceMode="singleChoice"
+            android:id="@+id/listmotion"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+
+            <Button
+                android:onClick="createMotion"
+                android:id="@+id/addmotion"
+                android:background="#ff4444"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="모션넣기" />
+
+            <Button
+                android:onClick="fileload"
+                android:id="@+id/fileload"
+                android:background="#ff4444"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="불러오기" />
+
+
+            <Button
+                android:onClick="createDelay"
+                android:id="@+id/adddelay"
+                android:background="#ff4444"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="딜레이" />
+
+            <Button
+                android:onClick="delete"
+                android:id="@+id/delete"
+                android:background="#ff4444"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="삭제하기" />
+
+
+
+
+            <Button
+                android:onClick="filesave"
+                android:id="@+id/save"
+                android:background="#4444ff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="파일생성" />
+
+            <Button
+                android:onClick="exit"
+                android:id="@+id/exit"
+                android:background="#777733"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="뒤로가기" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
